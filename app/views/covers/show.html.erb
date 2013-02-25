@@ -1,0 +1,43 @@
+<p>
+  <b>Book:</b>
+  <%=h @cover.book_id %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%=h @cover.parent_id %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @cover.size %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%=h @cover.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @cover.height %>
+</p>
+
+<p>
+  <b>Content type:</b>
+  <%=h @cover.content_type %>
+</p>
+
+<p>
+  <b>Filename:</b>
+  <%=h @cover.filename %>
+</p>
+
+<p>
+  <b>Thumbnail:</b>
+  <%=h @cover.thumbnail %>
+</p>
+
+
+<%= link_to 'Edit', edit_cover_path(@cover) %> |
+<%= link_to 'Back', covers_path %>

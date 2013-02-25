@@ -1,0 +1,11 @@
+<h3>There are currently <%= @orders %> Orders in the database</h3>
+<p>It's best if you export only 1,000 orders at a time. Entering in "1" in the Lower Bound and "1000" in the upper bound will export a dataset from the earliest (1st) order to the 1000th order, sorted by order date</p>
+
+
+<% form_tag(:action => "data_export") do %>
+	Lower Bound <%= text_field_tag "lower", "1" %><br><br>
+	
+	Upper Bound <%= text_field_tag "upper", "1000" %><br><br>
+  
+	<%= submit_tag "Export Dataset" %>
+<% end -%>

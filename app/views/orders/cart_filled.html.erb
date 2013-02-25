@@ -1,0 +1,10 @@
+<div id="cart_filled_top">
+		<%= render :partial => 'books/checkout_cart',:collection=> @cart_items %>
+</div>
+		<div id="cart_filled_buttons">
+			<a href="#" title="Close window"  class="button_left" onclick="Modalbox.hide(); return false;"><img src="../images/03-selected_change.png" border="0" /></a>
+			
+			<a href="orders/new" title="Place Order"  class="button_right"><img src="../images/03-selected_placeorder.png" border="0" /></a>
+		</div>
+		
+	

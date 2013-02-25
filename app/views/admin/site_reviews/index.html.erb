@@ -1,0 +1,26 @@
+<div id="admin_site_review">
+
+<table>
+  <tr>
+  	<th>Order</th>
+    <th>Approve</th>
+    <th>Comments</th>
+  </tr>
+
+<% for site_review in @site_reviews %>
+  <tr>
+  	<td><%=h site_review.order_id %></td>
+    <td><%=h site_review.approve %></td>
+    <td><%=h site_review.comments %></td>
+    <td><%= link_to 'Show', {:controller=> 'admin/site_reviews',
+			:action => 'show', :id=>site_review.id } %></td>
+    <td><%= link_to 'Edit', edit_admin_site_review_path(site_review) %></td>
+    <td><%= link_to 'Destroy', [:admin, site_review], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New site_review', new_admin_site_review_path %>
+</div>

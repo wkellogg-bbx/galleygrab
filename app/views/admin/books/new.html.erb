@@ -1,0 +1,125 @@
+<h1>New book</h1>
+
+<%= error_messages_for :book, :cover %>
+
+<% form_for([:admin, @book], :html => { :multipart => true }) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Subtitle</b><br />
+    <%= f.text_field :subtitle %>
+  </p>
+
+  <p>
+    <b>Author</b><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+  	<b>Format</b><br />
+  	<%= select :book, :format, ["Hardcover","Paperback Original"]    %>
+  </p>
+  <p>
+  	<b>Preview Format</b><br />
+  	<%= select :book, :preview_format, ["Advance Reading Copy","Bound Galley", "Finished Book"], :include_blank=>true    %>
+  </p>
+  
+   <p>
+  	<b>Publisher</b><br />
+  	<%= select :book, :publisher, ["Atria Books","Simon & Schuster"]    %>
+  </p>
+  <p>
+    <b>Publisher Contact Name</b><br />
+    <%= f.text_field :contact_name %>
+  </p>
+   <p>
+    <b>Publisher Contact Email</b><br />
+    <%= f.text_field :contact_email %>
+  </p>
+<p>
+    <b>Editor Contact Name</b><br />
+    <%= f.text_field :editor_name %>
+  </p>
+   <p>
+    <b>Editor Contact Email</b><br />
+    <%= f.text_field :editor_email %>
+  </p>
+<p>
+    <b>Marketing Manager Name</b><br />
+    <%= f.text_field :marketing_name %>
+  </p>
+   <p>
+    <b>Marketing Manager Email</b><br />
+    <%= f.text_field :marketing_email %>
+  </p>
+  <p>
+    <b>Estimated Ship date</b>(a date that has past will appear as "Available Now")<br />
+    <%= f.date_select :ship_date, :order =>[:month,:day,:year],:start_year=>2009,:end_year=>2013, :include_blank => true,:prompt=> true   %>
+  </p>
+
+  <p>
+    <b>Pubdate</b>(a date that has past will appear as "Available Now")<br />
+    <%= f.date_select :pubdate, :order =>[:month,:day,:year],:start_year=>2009,:end_year=>2013, :include_blank => true,:prompt=> true   %>
+  </p>
+
+  <p>
+    <b>U.S. Price</b><br />
+    $<%= f.text_field :us_price %>
+  </p>
+
+  <p>
+    <b>Canadian Price</b><br />
+    $<%= f.text_field :can_price %>
+  </p>
+
+  <p>
+    <b>ISBN_13 (do not include dashes)</b><br />
+    <%= f.text_field :isbn_13 %>
+  </p>
+  <p>
+    <b>Selling point</b> <br />
+    <%= f.text_area :short_descrip, :cols => 50, :rows => 4 %>
+  </p>
+
+  <p>
+    <b>Short description</b> (section to appear as shorter blurb in book detail -before the person clicks 'Read More')<br />
+    <%= f.text_area :short_descrip, :cols => 50, :rows => 4 %>
+  </p>
+
+  <p>
+    <b>Long description</b>(Full description - do not include marketing items, for now include &lt;p&gt; &lt;/p&gt; tags for line breaks)<br />
+    <%= f.text_area :long_descrip, :cols => 50, :rows => 10 %>
+  </p>
+  <p>
+    <b>Marketing Items</b>(wrap each point in  	&lt;li&gt; 	&lt;/li&gt; tags)<br />
+    <%= f.text_area :marketing, :cols => 50, :rows => 7 %>
+  </p>
+
+  <p>
+    <b>Position</b><br />
+    <%= f.text_field :position,  :size => 1 %>
+  </p>
+  <p>
+    <%= label :book, :cover %>    
+    <!-- #END:start -->
+    <%= cover_for_admin @book, :small %>
+    <br />
+    <!-- #START:start -->
+    <%= file_field_tag :cover_file %>
+    <span class="hint">
+      We accept JPEG, GIF, or PNG files up to 500 KB.
+    </span>
+  </p>
+  <p>
+    <b>Galley URL</b><br />
+    <%= f.text_field :galley_url %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', admin_books_path %>

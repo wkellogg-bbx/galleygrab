@@ -1,0 +1,142 @@
+<div id="modal">
+<div class="detail_add_button">
+	<% if !session[:cart_ids].include?("#{@book.id}") %>
+				<% form_tag :controller => 'orders',:action => 'add_item_to_cart' do %>
+					<%= hidden_field_tag :book, @book.id %>
+					<%= submit_tag 'Add to Cart' , :class=> 'add_button' %>		
+					<a href="<%= @book.galley_url %>" class="galley_button_right">eGalley</a> <!-- rnav -->	
+				<% end %>
+			<% else %>
+				<% form_tag :controller => 'orders',:action => 'remove_item_from_cart' do %>
+					<%= hidden_field_tag :book, @book.id %>
+					<%= submit_tag 'Remove from Cart' , :class=> 'remove_button' %>
+					<a href="<%= @book.galley_url %>" class="galley_button_right">eGalley</a> <!-- rnav -->
+				<% end %>
+			<% end %>
+</div>
+
+			
+
+
+			<h2 class="detail_title"><%= @book.title %></h2>
+			<h3 class="detail_subtitle"><%= @book.subtitle %></h3>
+			<h4 class="detail_author"><%= @book.author %></h4>
+			
+			<div class="detail_gray_section">
+				<%= @book.preview_format %><span class="pipe"> | </span>
+				
+				<% if (Date.today <=> @book.ship_date)>0  %>
+					Available Now
+				<% else -%>
+					Estimated Delivery Date: <%= @book.ship_date.strftime("%B %e, %Y") %>
+				<% end -%>
+			</div>
+			<div class="detail_left">
+				<div class="detail_image">
+					<%= image_tag( @book.cover.public_filename(:large),  :size => "182x273") %>
+				</div>
+				<table border="1" bordercolor="black" cellspacing="0" cellpadding="2" width="184" class="detail_table">
+					<tr>
+						<td class="detail_table_left">
+							ISBN
+						</td>
+						<td class="detail_table_right">
+							<%=h @book.isbn_13 %>
+						</td>
+					</tr>
+					<tr>
+						<td class="detail_table_left">
+							PRICE
+						</td>
+						<td class="detail_table_right">
+							
+							$<%= "%.2f" % @book.us_price %>/
+							<%if @book.can_price > 0 %>
+							$<%= "%.2f" % @book.can_price %>&nbsp;Can.
+							<%else%>
+							NCR
+							<%end%>
+						</td>
+					</tr>
+					<tr>
+						<td class="detail_table_left">
+							FORMAT
+						</td>
+						<td class="detail_table_right">
+							<%=h @book.format %>
+						</td>
+					</tr>
+					<tr>
+						<td class="detail_table_left">
+							IMPRINT
+						</td>
+						<td class="detail_table_right">
+							<%=h @book.publisher %>
+						</td>
+					</tr>
+					<tr>
+						<td class="detail_table_left">
+							ON SALE
+						</td>
+						<td class="detail_table_right">
+							<%= @book.pubdate.strftime("%m/%d/%Y")%>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="detail_right">
+				<div class="detail_selling_point">
+					<%= @book.selling_point %>
+				</div>
+				<div class="detail_marketing">
+					<h3>MARKETING</h3>
+					<ul>
+						<%= @book.marketing %>
+					</ul>
+					
+				</div>
+				<div id="detail_summary">
+					<h3>SUMMARY</h3>
+					<div id="detail_short">
+						<%= @book.short_descrip %>
+
+					</div>
+						<div id="detail_long" style="display:none;">
+						<%= @book.long_descrip %>
+
+					</div>
+					<%= link_to_function "<span id='more_long'>More</span><span id='hide_long' style='display:none;'>Hide</span>",nil, :id=>"more_link" do |page| 
+							page[:detail_long].toggle
+							page[:detail_short].toggle
+							page[:more_long].toggle
+							page[:hide_long].toggle
+						end %>
+				</div>
+				<% if @book.contact_name %>
+				<div class="detail_publicity">
+					<h3>CONTACTS</h3>
+					<p><%= @book.contact_name %></p>
+				<p><a href="mailto:<%= @book.contact_email%>"><%= @book.contact_email%></a></p>
+				</div>
+				<% end -%>
+					<% if @book.editor_name %>
+					<div class="detail_publicity">
+						<p><%= @book.editor_name %></p>
+						<p><a href="mailto:<%= @book.editor_email%>"><%= @book.editor_email%></a></p>	
+					</div>
+					<% end -%>
+
+					<% if @book.marketing_name %>
+					<div class="detail_publicity">
+						<p><%= @book.marketing_name %></p>
+						<p><a href="mailto:<%= @book.marketing_email%>"><%= @book.marketing_email%></a></p>		
+					</div>
+					<% end -%>
+			</div>
+			
+			<div style="width:100%; clear:both;">
+		
+		</div>
+	
+</div>
+

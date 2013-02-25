@@ -1,0 +1,5 @@
+<div class="cart_item confirm">
+			<%= cover_for_nolink(confirm_cart, :small) %>
+			<div class="estimate">Estimated Ship Date:</div>
+			<div class="date"><%= confirm_cart.ship_date.strftime("%B %e, %Y") %></div>
+</div>

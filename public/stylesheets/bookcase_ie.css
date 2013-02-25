@@ -1,0 +1,55 @@
+
+.book_item a.info:hover span{ /*the span will display just on :hover state*/ 
+  margin-top:65px; left:-24px; width:140px;
+}
+
+.add_button, .remove_button {
+	margin-top:7px;
+	font-size: 0px;
+	display:block;
+	line-height: 0px;
+}
+
+.cart_item{
+		width:104px;
+		margin-left:41px;	
+}
+
+#catalog_cart .remove_button {
+	margin-top:5px;
+}
+
+.fieldWithErrors {
+	margin:0;
+  display:table;
+ 
+}
+.check .fieldWithErrors {
+	border:0;
+}
+.check .fieldWithErrors #order_eula{
+	border:2px solid red;
+}
+
+.galley_button {  
+	margin-top:7px !important; 
+}
+.galley_button:hover {  
+	margin-top:7px !important; 
+}
+
+.galley_button_left {  
+	margin-top:7px !important; 
+}
+.galley_button_left:hover {  
+	margin-top:7px !important; 
+}
+
+
+.galley_button_right {  
+	margin-top:7px !important; 
+}
+.galley_button_right:hover {  
+	margin-top:7px !important; 
+}
+

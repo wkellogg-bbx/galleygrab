@@ -1,0 +1,77 @@
+
+<div id="counter">
+<h1>World Domination Index</h1>
+
+<table border="0" cellspacing="5" cellpadding="5">
+	
+	<tr>
+		<td>
+			<h2>Orders:</h2>
+		</td>
+		<td>
+			<h3><%= @orders %></h3> 
+		</td>
+		<td>
+			(<%= @bookseller_orders %> Booksellers, <%= @reviewer_orders %> Reviewers, <%= @librarian_orders %> Librarian, <%= @trade_orders %> Trade )
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h2>Books Ordered:</h2>
+		</td>
+		<td>
+			<h3><%= @books_ordered %></h3>
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h2>Site Reviews:</h2>
+		</td>
+		<td>
+			<h3><%= @site_reviews %></h3> 
+		</td>
+		<td>
+			(<%= @site_reviews_good %> Approve, <%= @site_reviews_bad %> Disapprove )
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h2>Newsletter Opt-ins:</h2>
+		</td>
+		<td>
+			<h3><%= @opt_ins %></h3> 
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h2>Galley Alley Newsletter Opt-ins:</h2>
+		</td>
+		<td>
+			<h3><%= @newsletter_optins %></h3> 
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h2>Last Order:</h2>
+		</td>
+		<td>
+				<h4><%= distance_of_time_in_words @last_order.created_at, Time.now %> ago</h4>
+		</td>
+		<td>
+			<%= (@last_order.created_at-14400).strftime("%A, %B %m, %Y %I:%M:%S %p") %> EST
+		</td>
+		
+	</tr>
+	
+	
+</table>
+</div>

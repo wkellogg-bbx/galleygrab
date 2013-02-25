@@ -1,0 +1,1067 @@
+
+--- 
+books: 
+  columns: 
+  - id
+  - title
+  - subtitle
+  - author
+  - pubdate
+  - us_price
+  - can_price
+  - isbn_13
+  - short_descrip
+  - long_descrip
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - God Sleeps in Rwanda
+    - A Political and Personal Memoir
+    - Joseph Sebarenzi with Laura Mullane
+    - "2009-09-01"
+    - "25"
+    - "32.99"
+    - "9781416575733"
+    - A harrowing, deeply moving tale of survival and reconciliation by a Rwandan Tutsi who returns to his homeland following the 1994 genocide, is elected Speaker of the Rwanda Parliament, and yet is soon forced into exile once again.
+    - "<p>Joseph Sebarenzi did not learn the words \xE2\x80\x9CHutu\xE2\x80\x9D and \xE2\x80\x9CTutsi\xE2\x80\x9D until one day at school, when he watched from his classroom as Hutus in his village burned Tutsis\xE2\x80\x99 homes. Until then, he thought of all the people of his nation as Rwandans. But outbreaks of violence between Hutus and Tutsis escalated, culminating in the 1994 genocide in which an estimated 800,000 Tutsis were killed. Sebarenzi watched the tragedy unfold\xE2\x80\x94and learned about the deaths of his parents, seven siblings, and numerous other relatives\xE2\x80\x94while living in Canada, where his family sent him twenty years earlier to escape the violence.</p>\r\n\
+      <p>\r\n\
+      Sebarenzi demonstrates how horrific events can occur in places like Darfur and the Congo without the rest of the world\xE2\x80\x99s knowledge and how the lessons of Rwanda can prevent future tragedies from happening. He exposes the corruption of the current government in Rwanda and details how people are taught to believe their fellow humans are less worthy than they are.</p>\r\n"
+    - "2"
+    - 2009-04-17 15:21:55
+    - 2009-04-20 11:52:10
+  - - "2"
+    - Stardust
+    - A Novel
+    - Joseph Kanon
+    - "2009-10-27"
+    - "27.95"
+    - "36"
+    - "9781439156148"
+    - "The acclaimed, bestselling author of The Good German and Los Alamos returns with his most absorbing and accomplished novel yet\xE2\x80\x94a mesmerizing tale of Hollywood, post-war political intrigue, and one man\xE2\x80\x99s determination to learn the truth about his brother\xE2\x80\x99s death."
+    - "<p>Hollywood, 1945. Ben Collier has just arrived from war-torn Europe to find that his brother Daniel has died in mysterious circumstances. Why would a man with a beautiful wife, a successful career in the movies, and a heroic past choose to kill himself?</p>\r\n\
+      <p>\r\n\
+      Determined to uncover the truth, Ben enters the maze of the studio system to penetrate the uneasy world beneath the glossy shine of the movie business. For this is the moment when politics and the dream factories are beginning to collide as Communist witch-hunts render even the biggest stars and star-makers vulnerable to having old secrets exposed and old loyalties tested. When Ben learns troubling facts about his own family\xE2\x80\x99s past, he is caught in the middle of a web of deception that shakes his moral foundation to its core.</p>\r\n"
+    - "1"
+    - 2009-04-17 16:17:50
+    - 2009-04-17 16:46:17
+  - - "3"
+    - The Christmas Cookie Club
+    - A Novel
+    - Ann Pearlman
+    - "2009-11-03"
+    - "24.95"
+    - "32.99"
+    - "9781439158845"
+    - An irresistible and highly commercial debut novel about twelve women who meet on a snowy December night for a cookie exchange and the rich and complicated bonds of friendship that unite them.
+    - "Like Kate Jacob\xE2\x80\x99s #1 New York Times bestseller, The Friday Night Knitting Club, The Christmas Cookie Club features an ensemble cast of women whose lives capture the spirit of family and friends and the wonderful, tragic, funny ups and downs of life. On the first Monday of December, every year, twelve friends gather in the evening with batches of homemade cookies wrapped in beautiful packages. They drink wine, they eat, and they take turns telling the story of the cookies they have baked. Somehow these stories are always emblematic of the year that has just passed. Stories about sisterly love and conflict, yearning for babies and grandchildren, passion and disillusionment with men, a secret decade long affair, the loss of a job, the death of a child...\r\n\
+      \r\n"
+    - "3"
+    - 2009-04-20 14:21:39
+    - 2009-04-20 14:21:40
+  - - "4"
+    - The 13th Hour
+    - A Thriller
+    - Richard Doetsch
+    - 
+    - "25.95"
+    - "34"
+    - "9781439147917"
+    - "A mesmerizing thriller\xE2\x80\x94told in reverse! Richard Doetsch\xE2\x80\x99s The 13th Hour is the story of a man given the chance to go back in time in one-hour increments to prevent a crime from ruining his life."
+    - "Nick Quinn is being held in jail, accused of his wife Julia\xE2\x80\x99s murder. He knows she\xE2\x80\x99s dead; he saw her bloody corpse. But he\xE2\x80\x99s innocent.\r\n\
+      \r\n\
+      At 9pm on July 28, a gray-haired gentleman gives Nick a talisman, allowing him to go back in time, one hour at a time, for a total of twelve hours. With each hour that Nick travels back, he finds more clues to the identity of Julia\xE2\x80\x99s real killer, but he also discovers that his actions in the past may have unexpected repercussions in the future. If he hasn\xE2\x80\x99t set things right by the thirteenth hour, all will be lost and all his good intentions of saving Julia\xE2\x80\x99s life may lead to a far greater catastrophe than he could have imagined.\r\n\
+      \r\n"
+    - "4"
+    - 2009-04-20 14:24:12
+    - 2009-04-20 14:24:12
+  - - "5"
+    - Nanny Returns
+    - A Novel
+    - Emma McLaughlin and Nicola Kraus
+    - "2009-12-15"
+    - "25"
+    - "32.99"
+    - "9781416585671"
+    - "New from the #1 New York Times bestselling authors of The Nanny Diaries\xE2\x80\x94what Newsweek called \xE2\x80\x9Ca national phenomenon\xE2\x80\x9D\xE2\x80\x94the highly anticipated sequel that picks up ten years later."
+    - "After living abroad for ten years, Nan and her husband, HH, return to New York and its Upper East Side world of power and privilege. With a consulting business to get off the ground and a new \xE2\x80\x9Cfixer-upper\xE2\x80\x9D to fix up, Nan is surprised to be thrown by her husband\xE2\x80\x99s sudden desire to start a family. In the midst of construction and marital chaos, sixteen-year-old Grayer X makes a drunken, late-night visit, having stumbled upon her old nanny-cam tape, wanting to know why she left.\r\n\
+      \r\n\
+      In an attempt to assuage her guilt Nan tries to help Grayer and his younger brother, Stilton, through their parents\xE2\x80\x99 brutal divorce, sucking her back into the ever-bizarre life of Mrs. X. Meanwhile she lands her first major client, the Trustees of an elite private school, the institutions that once picked up where the nannies left off, instilling discipline and boundaries on behalf of absentee parents. But as the Boards have donated their way to gaining control, the teachers have become the new hired help\xE2\x80\x94with all-too familiar consequences. \r\n"
+    - "5"
+    - 2009-04-20 14:25:56
+    - 2009-04-20 14:25:56
+  - - "6"
+    - How to Rule the World from your Couch
+    - ""
+    - Laura Day
+    - "2009-10-06"
+    - "23"
+    - "29.99"
+    - "9781439118207"
+    - Acclaimed teacher, healer, and New York Times bestselling author Laura Day demonstrates how to reach deeper into your intuition to transform your relationships, health, and financial situation.
+    - "Who uses intuition? The answer is everyone. For more than twenty years, Laura Day has taught people to use their intuition to strengthen businesses, find love, heal their bodies, make better decisions, and accomplish their dreams\xE2\x80\x94things that seemed impossible to them at the onset. \r\n\
+      \r\n\
+      In How to Rule the World from Your Couch, Day introduces techniques that create dazzling results in less time and with less work. You can initiate these techniques from your couch\xE2\x80\x94by using your innate ability to utilize that knowledge that you have inside of you to transmit and receive information, and to build a new reality. Everything you learn in this book will make your decisions better, your relationships stronger, your actions more effective and your life easier.\r\n\
+      \r\n"
+    - "6"
+    - 2009-04-20 14:28:12
+    - 2009-04-20 14:28:12
+  - - "7"
+    - Women, Work and the Art of Savoir Faire
+    - Business Sense & Sensibility
+    - Mireille Guiliano
+    - "2009-10-13"
+    - "24.95"
+    - "32.99"
+    - "9781416589198"
+    - "From the #1 New York Times bestselling author of French Women Don\xE2\x80\x99t Get Fat comes every woman\xE2\x80\x99s guide to navigating the working world, living the good life, and savoring every minute of it.\r\n\
+      \r\n"
+    - "When Mireille Guiliano became a senior executive and spokesperson for Veuve Clicquot, she took the Champagne to the top of the luxury market, using her distinctive Frenchwoman\xE2\x80\x99s philosophy and style. Now she uses those same talents and savoir faire to help readers pop their own corks and get the most out of life. \r\n\
+      \r\n\
+      In French Women Don\xE2\x80\x99t Get Fat, Guiliano taught women the secrets of eating for pleasure and became a much sought-after guest on high profile television shows like The Oprah Winfrey Show, the Today show, and Dateline. In Women, Work, and the Art of Savoir Faire, she draws on her experiences at the frontlines and high echelons of the business world to give women the practical advice they need to make work part of a well-balanced life. With lively lessons, stories, and helpful hints, Guiliano teaches every reader how to identify her own passions and talents, improve her communication skills, balance work and life, turn herself into a winning brand, and so much more.\r\n\
+      \r\n"
+    - "7"
+    - 2009-04-20 14:29:47
+    - 2009-04-20 14:29:48
+  - - "8"
+    - The Program
+    - Master the Secrets of Your Brain For the Healthiest Body and Happiest You The Proven 12-Week Method
+    - Kelly Traver, M.D., and Betty Kelly Sargent
+    - "2009-12-15"
+    - "27.95"
+    - "36"
+    - "9781439109984"
+    - "Introducing the revolutionary, field-tested, and scientifically proven approach to losing weight, lowering cholesterol, and getting totally fit for life by changing your brain\xE2\x80\x94in just twelve weeks."
+    - "The brain is the command center of the human body. Change it and the body follows. This is the wisdom that Stanford physician Dr. Kelly Traver employed when developing The Program, her mind-expanding and waistline-slimming system for getting into shape and staying that way.\r\n\
+      \r\n\
+      Using the most cutting-edge research in neuroscience today, Dr. Traver first tested The Program on her patients, delivering successful results in a short time: 98 percent of Dr. Traver\xE2\x80\x99s patients lowered their blood pressure, 15 percent reduced their body fat, and 100 percent lowered their cholesterol. Over the course of just twelve weeks, readers can achieve similar success by following Dr. Traver\xE2\x80\x99s \xE2\x80\x9CLearn It, Personalize It, Live It\xE2\x80\x9D plan. With simple, straightforward instructions, Dr. Traver shows readers how to outsmart their own brains by rewiring the stubbornly change-resistant organ so that it not only accepts healthy lifestyle habits, it embraces them. Once reprogrammed, the brain continues to crave healthy foods and exercise for life.\r\n"
+    - "8"
+    - 2009-04-20 14:31:01
+    - 2009-04-20 14:31:01
+  - - "9"
+    - Dog On It
+    - A Chet and Bernie Mystery
+    - Spencer Quinn
+    - 
+    - "25"
+    - "32.99"
+    - "9781416585831"
+    - The New York Times bestselling debut of an irresistible new detective series featuring Chet, canine companion to P.I. Bernie. Solving crime has never been this much fun.
+    - "\xE2\x80\x9CI could smell him\xE2\x80\x94or rather the booze on his breath\xE2\x80\x94before he even opened the door, but my sense of smell is pretty good, probably better than yours,\xE2\x80\x9D begins this delightful new detective novel. Bernie, the one with the booze on his breath, is a human being. His partner Chet\xE2\x80\x94and the narrator of the book\xE2\x80\x94is a dog. Chet might have flunked out of police school, but he\xE2\x80\x99s a detective through and through. In Dog On It, their first adventure, Chet and Bernie investigate the disappearance of a teenaged girl who may or may not have been kidnapped, but who has definitely gotten mixed up with some very unsavory characters. There\xE2\x80\x99s genuine suspense and intrigue, combined with humor and deep insight into the bond between dog and man."
+    - "10"
+    - 2009-04-20 14:32:55
+    - 2009-04-20 14:32:55
+  - - "10"
+    - Simple Skin Beauty
+    - Everything You Need to Know for a Lifetime of Gorgeous, Healthy Skin
+    - Ellen Marmur, M.D., with Gina Way
+    - "2009-08-25"
+    - "26"
+    - "34"
+    - "9781416586968"
+    - The only skincare book you will ever need, Simple Skin Beauty covers everything from acne to wrinkles to skin cancer prevention making it the definitive dermatological guide for women of all ages.
+    - "With all the different kinds of skincare products now on the shelves and all the new-fangled cosmetic procedures now available, skincare has become daunting and overwhelming. New York City-based dermatologist, and a busy mother of four herself, Dr. Ellen Marmur knows that most women simply don\xE2\x80\x99t have the time or money to waste on products or procedures that are costly and ineffective. In this user-friendly guide, Dr. Marmur explains how it doesn\xE2\x80\x99t have to be so hard for women to get great skin and it doesn\xE2\x80\x99t have to be so expensive to maintain it.\r\n\
+      \r\n\
+      In her conversational but authoritative voice, Dr. Marmur arms readers with the knowledge they need to make safe and smart dermatological decisions for themselves and their families and provides them with the confidence to create their own no-nonsense skincare regimen that gets results\xE2\x80\x94at the cosmetics counter, at home, at the doctor\xE2\x80\x99s office, and beyond.\r\n"
+    - "11"
+    - 2009-04-20 14:34:34
+    - 2009-04-20 14:34:34
+  - - "11"
+    - The Promised World
+    - A Novel
+    - Lisa Tucker
+    - "2009-09-01"
+    - "25"
+    - "32.99"
+    - "9781416575382"
+    - From the bestselling author of The Cure for Modern Life and Once Upon a Day comes a riveting novel of suspense about a literature professor whose carefully constructed life is shattered after the death of her twin brother and the unraveling of the secret world they shared.
+    - "On a March afternoon, while Lila Cole is working in her quiet office, her twin brother Billy points an unloaded rifle out of a hotel window across from an elementary school, closing down a city block. \xE2\x80\x9CSuicide by police\xE2\x80\x9D was obviously Billy\xE2\x80\x99s intended result, but the aftermath of his death brings shock after shock for Lila when she discovers that her twin\xE2\x80\x94the person she thought she was closer to than anyone in the world was not only estranged from his wife, but also charged with endangering the life of his middle child and namesake, eight-year-old William.\r\n\
+      \r\n\
+      Lila\xE2\x80\x99s quest for answers puts her job, her marriage, and even her sanity at risk as she begins to learn the horrible truth about her family. When Billy\xE2\x80\x99s children are in danger of repeating the twins\xE2\x80\x99 tragic past, all of the characters will have to confront their own complicity and recognize the deep guilt that always tortured Billy even as he spun a beautiful dream of the future from the stories he loved\xE2\x80\x94a classic American myth of redemption and second chances. \r\n\
+      \r\n"
+    - "12"
+    - 2009-04-20 14:35:50
+    - 2009-04-20 14:35:50
+  - - "12"
+    - The Atlantis Revelation
+    - A Novel
+    - Thomas Greanias
+    - "2009-08-11"
+    - "25"
+    - "32.99"
+    - "9781416589129"
+    - "From the New York Times bestselling author of The Atlantis Prophecy comes his first hardcover\xE2\x80\x94 an explosive new international thriller jam-packed with political and prophetic intrigue."
+    - "With his first two novels, Thomas Greanias established himself as a formidable author of action-packed global adventures. His newest adventure begins with the wreckage of a sunken Nazi submarine and a shocking legacy of Hitler\xE2\x80\x99s quest for Atlantis. Archeologist Conrad Yeats discovers in the ruins of the Third Reich the key to an ancient conspiracy that reaches the highest levels of every major government. Suddenly Yeats is plunged into a deadly race across the Mediterranean, alone against a centuries-old organization that will stop at nothing to ignite global Armageddon in order to re-establish the Roman Empire in the 21st century. And only Serena Serghetti, the beautiful Vatican linguist he loved and lost, can help him save the world from the Atlantis Revelation."
+    - "13"
+    - 2009-04-20 14:37:11
+    - 2009-04-20 14:37:11
+  - - "13"
+    - The Lovers
+    - A Charlie Parker Novel
+    - John Connolly
+    - "2009-06-02"
+    - "26"
+    - "34"
+    - "9781416569541"
+    - "Charlie Parker returns in New York Times bestselling author John Connolly\xE2\x80\x99s most chilling and mesmerizing thriller to date."
+    - "Charlie Parker is a lost soul. Deprived of his private investigator\xE2\x80\x99s license and under scrutiny by the police, he has been forced to seek work in a Portland bar. But he is using his enforced retirement to begin a different kind of investigation: an examination of his own past and an inquiry into the death of his father, who took his own life after apparently shooting dead two unarmed teenagers, a search that will eventually lead Parker to question all that he believed about his beloved parents, and about himself.\r\n\
+      \r\n\
+      But there are other forces at work: a troubled young woman who is running from an unseen threat, one that already seems to have taken the life of her boyfriend; a journalist-turned-writer named Mickey Wallace who is conducting an investigation of his own into Parker in the hope of writing a nonfiction book about his exploits. And haunting the shadows, as they have done throughout Parker\xE2\x80\x99s life, are two figures: a man and a woman who appear to have only one purpose: to bring an end to Charlie Parker\xE2\x80\x99s existence\xE2\x80\xA6\r\n"
+    - "14"
+    - 2009-04-20 14:38:39
+    - 2009-04-20 14:38:39
+  - - "14"
+    - Sweet Mary
+    - A Novel
+    - Liz Balmaseda
+    - "2009-07-14"
+    - "24.95"
+    - "32.99"
+    - "9781416542964"
+    - "In this mesmerizing debut novel by two-time Pulitzer Prize\xE2\x80\x93winning journalist Liz Balmaseda, one woman\xE2\x80\x99s hunger for justice becomes a journey into darkness\xE2\x80\x94and a punishing, soul-searching test of priorities."
+    - "Dulce Maria \xE2\x80\x9CMary\xE2\x80\x9D Guevara is a woman with nothing left to lose. Wrongly accused of being a cocaine queen, she has lost her job, her reputation, and\xE2\x80\x94worst of all\xE2\x80\x94custody of her son. Even after the charges are dropped, suspicion lingers. Desperate to get it all back, she takes what she considers the only path open to her: she goes on the hunt for the real drug queen. Unfortunately, the one person she is sure will be able to help her is the one person she wants least to see again: Joe Pratts, her ex-fianc\xC3\xA9, a man whose connections to the drug world once ended their relationship.\r\n\
+      \r\n\
+      Trying not to fall again for Joe is just the beginning of Mary\xE2\x80\x99s challenges, however. The drug queen she is targeting is safely ensconced in the suburbs, hiding behind the fa\xC3\xA7ade of domestic tranquility. And taking her down means doing something that strikes Mary a little too close to home: she would have to leave the drug queen\xE2\x80\x99s young daughter without a mother.\r\n"
+    - "15"
+    - 2009-04-20 14:40:12
+    - 2009-04-20 14:40:12
+  - - "15"
+    - Best Friends Forever
+    - A Novel
+    - Jennifer Weiner
+    - "2009-07-14"
+    - "26.95"
+    - "29.99"
+    - "9780743294294"
+    - "Bestselling author Jennifer Weiner\xE2\x80\x99s dazzling new novel Best Friends Forever explores the impact of love, desire, and familial loss on a friendship between two young women, and how the choices they make will change their lives forever."
+    - "One of the nation\xE2\x80\x99s most beloved and successful writers of women\xE2\x80\x99s fiction, Jennifer Weiner has become a literary phenomenon with millions of copies of her books in print. Her latest work, Best Friends Forever will delight fans and critics alike, following the ups and downs of a long-time friendship between two young girls who grow up to be two very different women.\r\n\
+      \r\n\
+      Addie Downs and Valerie Adler were eight when they first met and decided to be best friends forever. But, in the wake of tragedy and betrayal during their teenage years, everything changed. Val went on to fame and fortune. Addie stayed behind in their small Midwestern town.\r\n\
+      \r\n\
+      Destiny, however, had more in store for these two. And when, twenty-five years later, Val shows up at Addie\xE2\x80\x99s front door with blood on her coat and terror on her face, it is the beginning of a wild adventure for two women joined by love and history who find strength together that they could not find alone.\r\n"
+    - "16"
+    - 2009-04-20 14:41:41
+    - 2009-04-20 14:41:42
+  - - "16"
+    - Mercury in Retrograde
+    - A Novel
+    - Paula Froelich
+    - "2009-06-02"
+    - "24"
+    - "32"
+    - "9781416598930"
+    - A debut comic novel by the Page Six columnist for the New York Post about the bonds of friendship among three very different women who share a New York City address.
+    - "Paula Froelich has seen and heard it all. As a top gossip columnist, she is very well-connected and has had the scoop on every high profile New York scandal. Now Froelich brings her insider\xE2\x80\x99s perspective to women\xE2\x80\x99s fiction in her delicious debut that is sure to have people talking.\r\n\
+      \r\n\
+      Mercury in Retrograde introduces three women whose lives intersect when they each decide to move into the same SoHo apartment building. Penelope Mercury is an intrepid reporter at the New York Telegraph who spends her days pounding the pavement in every borough to meet the unreasonable demands of her boss. She aspires to cover courtroom drama for the paper, but on one disastrous day instead of being promoted, she gets fired. Lena \xE2\x80\x9CLipstick Carcrash\xE2\x80\x9D Lippencrass is an Upper East Side socialite who works at the high fashion magazine Y and loses her perfect apartment after her wealthy parents cut her off from her trust fund. And Dana Gluck is a corporate lawyer on the verge of becoming a partner who has seen her marriage and prospects for motherhood disappear, leaving her almost comatose with depression.\r\n\
+      \r\n\
+      As these three disparate women become friends, they soon discover that having their carefully planned lives fall to pieces might have been the best thing that could have ever happened to them. \r\n"
+    - "17"
+    - 2009-04-20 14:43:24
+    - 2009-04-20 14:43:25
+
+--- 
+books_orders: 
+  columns: 
+  - book_id
+  - order_id
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - "4"
+    - 2009-04-17 15:21:55
+    - 2009-04-20 11:52:10
+  - - "2"
+    - "4"
+    - 2009-04-17 16:17:50
+    - 2009-04-17 16:46:17
+  - - "2"
+    - "5"
+    - 2009-04-17 16:17:50
+    - 2009-04-17 16:46:17
+  - - "3"
+    - "4"
+    - 2009-04-20 14:21:39
+    - 2009-04-20 14:21:40
+  - - "3"
+    - "5"
+    - 2009-04-20 14:21:39
+    - 2009-04-20 14:21:40
+  - - "4"
+    - "5"
+    - 2009-04-20 14:24:12
+    - 2009-04-20 14:24:12
+  - - "6"
+    - "4"
+    - 2009-04-20 14:28:12
+    - 2009-04-20 14:28:12
+  - - "11"
+    - "4"
+    - 2009-04-20 14:35:50
+    - 2009-04-20 14:35:50
+
+--- 
+covers: 
+  columns: 
+  - id
+  - book_id
+  - parent_id
+  - size
+  - width
+  - height
+  - content_type
+  - filename
+  - thumbnail
+  - created_at
+  - updated_at
+  records: 
+  - - "13"
+    - "1"
+    - 
+    - "78786"
+    - "397"
+    - "600"
+    - image/jpeg
+    - GodSleepsInRwanda_9781416575733_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-17 16:45:09
+    - 2009-04-17 16:45:09
+  - - "14"
+    - 
+    - "13"
+    - "78810"
+    - "99"
+    - "150"
+    - image/jpeg
+    - GodSleepsInRwanda_9781416575733_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-17 16:45:09
+    - 2009-04-17 16:45:09
+  - - "15"
+    - 
+    - "13"
+    - "78810"
+    - "66"
+    - "100"
+    - image/jpeg
+    - GodSleepsInRwanda_9781416575733_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-17 16:45:10
+    - 2009-04-17 16:45:10
+  - - "16"
+    - 
+    - "13"
+    - "78810"
+    - "32"
+    - "48"
+    - image/jpeg
+    - GodSleepsInRwanda_9781416575733_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-17 16:45:10
+    - 2009-04-17 16:45:10
+  - - "17"
+    - "2"
+    - 
+    - "82734"
+    - "400"
+    - "600"
+    - image/jpeg
+    - Stardust_9781439156148_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-17 16:46:16
+    - 2009-04-17 16:46:16
+  - - "18"
+    - 
+    - "17"
+    - "82752"
+    - "100"
+    - "150"
+    - image/jpeg
+    - Stardust_9781439156148_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-17 16:46:16
+    - 2009-04-17 16:46:16
+  - - "19"
+    - 
+    - "17"
+    - "82752"
+    - "67"
+    - "100"
+    - image/jpeg
+    - Stardust_9781439156148_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-17 16:46:16
+    - 2009-04-17 16:46:16
+  - - "20"
+    - 
+    - "17"
+    - "82752"
+    - "32"
+    - "48"
+    - image/jpeg
+    - Stardust_9781439156148_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-17 16:46:16
+    - 2009-04-17 16:46:16
+  - - "21"
+    - "3"
+    - 
+    - "93939"
+    - "400"
+    - "574"
+    - image/jpeg
+    - ChristmasCookieClub_9781439158845pearlman_ann_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:21:39
+    - 2009-04-20 14:21:39
+  - - "22"
+    - 
+    - "21"
+    - "93968"
+    - "33"
+    - "48"
+    - image/jpeg
+    - ChristmasCookieClub_9781439158845pearlman_ann_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:21:40
+    - 2009-04-20 14:21:40
+  - - "23"
+    - 
+    - "21"
+    - "93968"
+    - "70"
+    - "100"
+    - image/jpeg
+    - ChristmasCookieClub_9781439158845pearlman_ann_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:21:40
+    - 2009-04-20 14:21:40
+  - - "24"
+    - 
+    - "21"
+    - "93968"
+    - "105"
+    - "150"
+    - image/jpeg
+    - ChristmasCookieClub_9781439158845pearlman_ann_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:21:40
+    - 2009-04-20 14:21:40
+  - - "25"
+    - "4"
+    - 
+    - "130964"
+    - "396"
+    - "600"
+    - image/jpeg
+    - 13thHour_9781439147917_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:24:12
+    - 2009-04-20 14:24:12
+  - - "26"
+    - 
+    - "25"
+    - "130955"
+    - "32"
+    - "48"
+    - image/jpeg
+    - 13thHour_9781439147917_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:24:12
+    - 2009-04-20 14:24:12
+  - - "27"
+    - 
+    - "25"
+    - "130955"
+    - "66"
+    - "100"
+    - image/jpeg
+    - 13thHour_9781439147917_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:24:12
+    - 2009-04-20 14:24:12
+  - - "28"
+    - 
+    - "25"
+    - "130955"
+    - "99"
+    - "150"
+    - image/jpeg
+    - 13thHour_9781439147917_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:24:12
+    - 2009-04-20 14:24:12
+  - - "29"
+    - "5"
+    - 
+    - "79250"
+    - "399"
+    - "600"
+    - image/jpeg
+    - NannyReturns_9781416585671_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:25:56
+    - 2009-04-20 14:25:56
+  - - "30"
+    - 
+    - "29"
+    - "79291"
+    - "32"
+    - "48"
+    - image/jpeg
+    - NannyReturns_9781416585671_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:25:56
+    - 2009-04-20 14:25:56
+  - - "31"
+    - 
+    - "29"
+    - "79291"
+    - "67"
+    - "100"
+    - image/jpeg
+    - NannyReturns_9781416585671_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:25:56
+    - 2009-04-20 14:25:56
+  - - "32"
+    - 
+    - "29"
+    - "79291"
+    - "100"
+    - "150"
+    - image/jpeg
+    - NannyReturns_9781416585671_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:25:56
+    - 2009-04-20 14:25:56
+  - - "33"
+    - "6"
+    - 
+    - "92147"
+    - "400"
+    - "600"
+    - image/jpeg
+    - RuleWorldFromCouch_9781439118207_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:28:12
+    - 2009-04-20 14:28:12
+  - - "34"
+    - 
+    - "33"
+    - "92166"
+    - "32"
+    - "48"
+    - image/jpeg
+    - RuleWorldFromCouch_9781439118207_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:28:12
+    - 2009-04-20 14:28:12
+  - - "35"
+    - 
+    - "33"
+    - "92166"
+    - "67"
+    - "100"
+    - image/jpeg
+    - RuleWorldFromCouch_9781439118207_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:28:12
+    - 2009-04-20 14:28:12
+  - - "36"
+    - 
+    - "33"
+    - "92166"
+    - "100"
+    - "150"
+    - image/jpeg
+    - RuleWorldFromCouch_9781439118207_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:28:12
+    - 2009-04-20 14:28:12
+  - - "37"
+    - "7"
+    - 
+    - "40966"
+    - "388"
+    - "600"
+    - image/jpeg
+    - WomenWorkArtOfSavoirFaire_9781416589198_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:29:47
+    - 2009-04-20 14:29:47
+  - - "38"
+    - 
+    - "37"
+    - "40953"
+    - "31"
+    - "48"
+    - image/jpeg
+    - WomenWorkArtOfSavoirFaire_9781416589198_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:29:48
+    - 2009-04-20 14:29:48
+  - - "39"
+    - 
+    - "37"
+    - "40953"
+    - "65"
+    - "100"
+    - image/jpeg
+    - WomenWorkArtOfSavoirFaire_9781416589198_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:29:48
+    - 2009-04-20 14:29:48
+  - - "40"
+    - 
+    - "37"
+    - "40953"
+    - "97"
+    - "150"
+    - image/jpeg
+    - WomenWorkArtOfSavoirFaire_9781416589198_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:29:48
+    - 2009-04-20 14:29:48
+  - - "41"
+    - "8"
+    - 
+    - "55811"
+    - "400"
+    - "498"
+    - image/jpeg
+    - TheProgram_9781439109984traver_kelly.jpg
+    - 
+    - 2009-04-20 14:31:01
+    - 2009-04-20 14:31:01
+  - - "42"
+    - 
+    - "41"
+    - "55790"
+    - "39"
+    - "48"
+    - image/jpeg
+    - TheProgram_9781439109984traver_kelly_small.jpg
+    - small
+    - 2009-04-20 14:31:01
+    - 2009-04-20 14:31:01
+  - - "43"
+    - 
+    - "41"
+    - "55790"
+    - "80"
+    - "100"
+    - image/jpeg
+    - TheProgram_9781439109984traver_kelly_medium.jpg
+    - medium
+    - 2009-04-20 14:31:01
+    - 2009-04-20 14:31:01
+  - - "44"
+    - 
+    - "41"
+    - "55790"
+    - "120"
+    - "150"
+    - image/jpeg
+    - TheProgram_9781439109984traver_kelly_large.jpg
+    - large
+    - 2009-04-20 14:31:01
+    - 2009-04-20 14:31:01
+  - - "45"
+    - "9"
+    - 
+    - "87122"
+    - "389"
+    - "600"
+    - image/jpeg
+    - DogOnIt_9781416585831.jpg
+    - 
+    - 2009-04-20 14:32:55
+    - 2009-04-20 14:32:55
+  - - "46"
+    - 
+    - "45"
+    - "87129"
+    - "31"
+    - "48"
+    - image/jpeg
+    - DogOnIt_9781416585831_small.jpg
+    - small
+    - 2009-04-20 14:32:55
+    - 2009-04-20 14:32:55
+  - - "47"
+    - 
+    - "45"
+    - "87129"
+    - "65"
+    - "100"
+    - image/jpeg
+    - DogOnIt_9781416585831_medium.jpg
+    - medium
+    - 2009-04-20 14:32:55
+    - 2009-04-20 14:32:55
+  - - "48"
+    - 
+    - "45"
+    - "87129"
+    - "97"
+    - "150"
+    - image/jpeg
+    - DogOnIt_9781416585831_large.jpg
+    - large
+    - 2009-04-20 14:32:55
+    - 2009-04-20 14:32:55
+  - - "49"
+    - "10"
+    - 
+    - "51439"
+    - "397"
+    - "600"
+    - image/jpeg
+    - SimpleSkinBeauty_9781416586968_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:34:34
+    - 2009-04-20 14:34:34
+  - - "50"
+    - 
+    - "49"
+    - "51472"
+    - "32"
+    - "48"
+    - image/jpeg
+    - SimpleSkinBeauty_9781416586968_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:34:34
+    - 2009-04-20 14:34:34
+  - - "51"
+    - 
+    - "49"
+    - "51472"
+    - "66"
+    - "100"
+    - image/jpeg
+    - SimpleSkinBeauty_9781416586968_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:34:34
+    - 2009-04-20 14:34:34
+  - - "52"
+    - 
+    - "49"
+    - "51472"
+    - "99"
+    - "150"
+    - image/jpeg
+    - SimpleSkinBeauty_9781416586968_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:34:34
+    - 2009-04-20 14:34:34
+  - - "53"
+    - "11"
+    - 
+    - "69332"
+    - "397"
+    - "600"
+    - image/jpeg
+    - ThePromisedWorld_9781416575382_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:35:50
+    - 2009-04-20 14:35:50
+  - - "54"
+    - 
+    - "53"
+    - "69356"
+    - "32"
+    - "48"
+    - image/jpeg
+    - ThePromisedWorld_9781416575382_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:35:50
+    - 2009-04-20 14:35:50
+  - - "55"
+    - 
+    - "53"
+    - "69356"
+    - "66"
+    - "100"
+    - image/jpeg
+    - ThePromisedWorld_9781416575382_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:35:50
+    - 2009-04-20 14:35:50
+  - - "56"
+    - 
+    - "53"
+    - "69356"
+    - "99"
+    - "150"
+    - image/jpeg
+    - ThePromisedWorld_9781416575382_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:35:50
+    - 2009-04-20 14:35:50
+  - - "57"
+    - "12"
+    - 
+    - "67963"
+    - "396"
+    - "600"
+    - image/jpeg
+    - AtlantisRevelation_9781416589129_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:37:11
+    - 2009-04-20 14:37:11
+  - - "58"
+    - 
+    - "57"
+    - "67981"
+    - "32"
+    - "48"
+    - image/jpeg
+    - AtlantisRevelation_9781416589129_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:37:11
+    - 2009-04-20 14:37:11
+  - - "59"
+    - 
+    - "57"
+    - "67981"
+    - "66"
+    - "100"
+    - image/jpeg
+    - AtlantisRevelation_9781416589129_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:37:11
+    - 2009-04-20 14:37:11
+  - - "60"
+    - 
+    - "57"
+    - "67981"
+    - "99"
+    - "150"
+    - image/jpeg
+    - AtlantisRevelation_9781416589129_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:37:11
+    - 2009-04-20 14:37:11
+  - - "61"
+    - "13"
+    - 
+    - "114061"
+    - "398"
+    - "600"
+    - image/jpeg
+    - TheLovers_9781416569541_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:38:39
+    - 2009-04-20 14:38:39
+  - - "62"
+    - 
+    - "61"
+    - "114047"
+    - "32"
+    - "48"
+    - image/jpeg
+    - TheLovers_9781416569541_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:38:39
+    - 2009-04-20 14:38:39
+  - - "63"
+    - 
+    - "61"
+    - "114047"
+    - "66"
+    - "100"
+    - image/jpeg
+    - TheLovers_9781416569541_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:38:39
+    - 2009-04-20 14:38:39
+  - - "64"
+    - 
+    - "61"
+    - "114047"
+    - "100"
+    - "150"
+    - image/jpeg
+    - TheLovers_9781416569541_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:38:39
+    - 2009-04-20 14:38:39
+  - - "65"
+    - "14"
+    - 
+    - "144118"
+    - "394"
+    - "600"
+    - image/jpeg
+    - SweetMary_9781416542964_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:40:12
+    - 2009-04-20 14:40:12
+  - - "66"
+    - 
+    - "65"
+    - "143996"
+    - "32"
+    - "48"
+    - image/jpeg
+    - SweetMary_9781416542964_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:40:12
+    - 2009-04-20 14:40:12
+  - - "67"
+    - 
+    - "65"
+    - "143996"
+    - "66"
+    - "100"
+    - image/jpeg
+    - SweetMary_9781416542964_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:40:12
+    - 2009-04-20 14:40:12
+  - - "68"
+    - 
+    - "65"
+    - "143996"
+    - "99"
+    - "150"
+    - image/jpeg
+    - SweetMary_9781416542964_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:40:12
+    - 2009-04-20 14:40:12
+  - - "69"
+    - "15"
+    - 
+    - "77157"
+    - "398"
+    - "600"
+    - image/jpeg
+    - BFF_9780743294294_NOT_FINAL_NOT_FINAL.jpg
+    - 
+    - 2009-04-20 14:41:41
+    - 2009-04-20 14:41:41
+  - - "70"
+    - 
+    - "69"
+    - "77173"
+    - "32"
+    - "48"
+    - image/jpeg
+    - BFF_9780743294294_NOT_FINAL_NOT_FINAL_small.jpg
+    - small
+    - 2009-04-20 14:41:42
+    - 2009-04-20 14:41:42
+  - - "71"
+    - 
+    - "69"
+    - "77173"
+    - "66"
+    - "100"
+    - image/jpeg
+    - BFF_9780743294294_NOT_FINAL_NOT_FINAL_medium.jpg
+    - medium
+    - 2009-04-20 14:41:42
+    - 2009-04-20 14:41:42
+  - - "72"
+    - 
+    - "69"
+    - "77173"
+    - "100"
+    - "150"
+    - image/jpeg
+    - BFF_9780743294294_NOT_FINAL_NOT_FINAL_large.jpg
+    - large
+    - 2009-04-20 14:41:42
+    - 2009-04-20 14:41:42
+  - - "73"
+    - "16"
+    - 
+    - "183617"
+    - "397"
+    - "600"
+    - image/jpeg
+    - MercuryInRetrograde_9781416598930.jpg
+    - 
+    - 2009-04-20 14:43:24
+    - 2009-04-20 14:43:24
+  - - "74"
+    - 
+    - "73"
+    - "183668"
+    - "32"
+    - "48"
+    - image/jpeg
+    - MercuryInRetrograde_9781416598930_small.jpg
+    - small
+    - 2009-04-20 14:43:25
+    - 2009-04-20 14:43:25
+  - - "75"
+    - 
+    - "73"
+    - "183668"
+    - "66"
+    - "100"
+    - image/jpeg
+    - MercuryInRetrograde_9781416598930_medium.jpg
+    - medium
+    - 2009-04-20 14:43:25
+    - 2009-04-20 14:43:25
+  - - "76"
+    - 
+    - "73"
+    - "183668"
+    - "99"
+    - "150"
+    - image/jpeg
+    - MercuryInRetrograde_9781416598930_large.jpg
+    - large
+    - 2009-04-20 14:43:25
+    - 2009-04-20 14:43:25
+
+--- 
+orders: 
+  columns: 
+  - id
+  - first_name
+  - last_name
+  - store
+  - address1
+  - address2
+  - city
+  - state
+  - zip
+  - email
+  - opt_in
+  - created_at
+  - updated_at
+  records: 
+  - - "4"
+    - Dan
+    - Drabik
+    - test
+    - test
+    - ""
+    - test
+    - test
+    - "10021"
+    - aasd@adas.com
+    - false
+    - 2009-04-21 14:22:51
+    - 2009-04-21 14:22:51
+  - - "5"
+    - Dan
+    - test
+    - test
+    - test
+    - ""
+    - Test
+    - tets
+    - "123123"
+    - asd@asdsa.com
+    - false
+    - 2009-04-21 14:23:40
+    - 2009-04-21 14:23:40

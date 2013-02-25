@@ -1,0 +1,59 @@
+<div id="confirm_page">
+
+
+	
+	<div id ="confirm_cart">
+		<%= render :partial => 'books/confirm_cart',:collection=> @order.books %>
+		
+	
+	</div>
+<div id="confirm_page_bottom">
+	<div id="top_titles">
+		<h3>The top 3 titles requested by booksellers and reviewers like you were:</h3>
+		<ol>
+			<%= render :partial => 'books/top_books',:collection=> @top_books %>
+			 
+
+		</ol>
+	</div>
+	<div id="review_form">
+		
+		<div id="review_thanks" style="display:none;">
+			<h3>Thank You for your feedback!</h3>
+		</div>
+		
+		<div id="review">
+			<h3>What did you think of this website?</h3>
+			<% remote_form_for [@order, @site_review] do |f| %>
+			
+		   <div class="review_radio">
+		     <%= radio_button :site_review, :approve, true , :checked=>true %>I would use the Galley Alley again in the future.<br>   
+		    	<%= radio_button :site_review, :approve, false %>I would not use the Galley Alley again.
+		    </div>
+		   
+
+	 	 
+	   <div class="review_text">
+	    <h4>What do you like/dislike? How can we improve the site?</h4>
+	    <%= f.text_area :comments, :class=>'review_form' %>
+	  
+	    </div>
+	
+		  <div>
+		    <%= f.submit "Create", :class=>'review_submit' %>
+		  </div>
+		  <% end %>
+	
+	</div>
+	
+</div>	
+<div id="catalog_footer" class="confirm">
+	<a href="http://www.simonandschuster.com/about/terms_of_use" target="_blank">Terms of Use</a> | <a href="http://www.simonandschuster.com/about/privacy_policy" target="_blank">Privacy Policy</a> |
+	Copyright &copy;1997 - 2012, Simon &amp; Schuster, Inc.<br>
+	All rights reserved, including the right of reproduction in whole or in part in any form.
+	
+</div>
+</div><!-- end confirm page -->
+
+
+

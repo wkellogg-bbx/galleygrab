@@ -1,0 +1,6 @@
+
+		<% if session[:cart_ids].length > 0 %>
+			<%= link_to "Place Order", new_order_path, :class=>'place_order' %>
+		<% end -%>
+	
+		

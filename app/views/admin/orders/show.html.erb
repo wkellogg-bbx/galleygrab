@@ -1,0 +1,44 @@
+
+<div id="admin_orders_show">
+<%= link_to 'Edit Order', edit_admin_order_path(@order) %> |
+<%= link_to 'Back to Admin', admin_orders_path %>
+<h2>Demographic</h2>
+<p>
+ First: <%=h @order.first_name %><br>
+ Last Name: <%=h @order.last_name %><br>
+ Email: <%=h @order.email %><br>
+ Phone: <%=h @order.phone %><br>
+</p>
+<h2>Books Ordered:</h2>
+	<ol>
+	<% @order.books.each do |book| %>
+		<li><%= book.title %></li>
+	<% end -%>
+	</ol>	
+
+
+<h2>Professional info:</h2>
+<p>
+	Type: <%=h @order.purchaser_type %><br>
+  Store/Company:  <%=h @order.store %><br>
+  Review Url: <%=h @order.review_url %>
+</p>
+
+
+ <h2>Address:</h2>
+ <p>
+  Address1: <%=h @order.address1 %><br>
+ 
+  City, State, Zip: <%=h @order.city %>,  <%=h @order.state %>  <%=h @order.zip %>
+</p>
+
+<p>
+ 	Newsletter Opt in: <%=h @order.opt_in %><br>
+  EULA Opt-in:  <%=h @order.eula %><br />
+Galley Alley Opt in: <%=h @order.newsletter_optin %><br>
+</p>
+
+
+
+
+</div>

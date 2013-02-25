@@ -1,0 +1,45 @@
+<div id="welcome_wrapper">
+	<div id="welcome_header">
+		<h1>Atria Books Galley Alley</h1>
+	</div>
+	<div id="welcome_letter">
+		<p>Welcome Friends,</p>
+		<p>2012 is Atria's 10-year anniversary, and we're full of thanks and gratitude to all the booksellers, librarians and reviewers who have participated in Atria's Galley Alley over the past three years. Your wonderful comments about the books and the program have helped us to improve it year after year. Once again we are delighted to bring BEA to you with our fourth annual Galley Alley, where you have a chance to request three galleys or finished books of some of our favorite upcoming titles. In addition, we're offering an unlimited number of digital galleys for most of our titles, so you don't have to wait to start reading.<br /><br />We're thrilled to give you an early look at our best lineup yet so you can recommend them to your customers, patrons, fans and followers. Don't forget to share your feedback and recommendations with us too, so we can incorporate them in our new Galley Alley e-newsletter and keep the buzz going all year long.</p>Happy reading, happy reviewing, happy selling!<br /><br />With thanks and gratitude,
+		<div id="welcome_sig">
+
+			<div class="bottom">
+				
+			</div>Judith Curr<br>
+	<br>
+		</div>
+		<p>PS &ndash; We'd love to be your friend on social media! Connect with us on <a href="http://Facebook.com/AtriaBooks">Facebook.com/AtriaBooks</a> and
+		<a href="http://Facebook.com/JudithCurr">Facebook.com/JudithCurr</a>, or tweet with us at <a href="http://Twitter.com/AtriaBooks">Twitter.com/AtriaBooks</a> and <a href="http://Twitter.com/JudithCurr">Twitter.com/JudithCurr</a>.</p>
+	</div>
+	<div id="welcome_book">
+		
+		<%= link_to image_tag('welcome-shelf_01.gif', :alt=>"Place Your Order" ,:class=>'welcome_shelf'), catalog_path  %>
+		<%= link_to image_tag('welcome-shelf_02.jpg', :alt=>"Place Your Order", :class=>'welcome_shelf' ), catalog_path  %>
+		<%= link_to image_tag('welcome-shelf_03.jpg', :alt=>"Place Your Order",:class=>'welcome_shelf' ), catalog_path  %>
+		
+	</div>
+	
+	<div id="catalog_footer" class="welcome">
+	<a href="http://www.simonandschuster.com/about/terms_of_use" target="_blank">Terms of Use</a> | <a href="http://www.simonandschuster.com/about/privacy_policy" target="_blank">Privacy Policy</a> |
+	Copyright &copy;1997 - 2012, Simon &amp; Schuster, Inc.<br>
+	All rights reserved, including the right of reproduction in whole or in part in any form.
+	
+</div>
+<div style="display:none;">
+	<img src="../images/dock_top_859x358.png" class="hiddenpic" />
+	<img src="../images/shelf_859x325.png" class="hiddenpic" />
+	<img src="../images/atria_logo.gif" class="hiddenpic" />
+	<img src="../images/atria_logo_catalog_footer_167x38_2.gif" class="hiddenpic" />
+	<img src="../images/add_button73x50.png" class="hiddenpic" />
+	<img src="../images/remove_button91x50.png" class="hiddenpic" />
+	<img src="../images/remove_button_selectionshelf_91x50.png" class="hiddenpic" />
+	<img src="../images/added_ribbon_117x176_test.gif" class="hiddenpic" />
+	<img src="../images/catalog_bg_1x1737.png" class="hiddenpic" />
+		<%= render :partial => 'books/preload_welcome',:collection=> @preload %>
+</div>
+</div>
+	

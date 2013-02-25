@@ -1,0 +1,7 @@
+
+page[:cart_books_display].replace_html :partial=> 'books/book_cart', :collection =>Book.find(session[:cart_ids])
+page[:shelf].replace_html :partial=> 'books/book', :collection =>Book.find(:all, :order=>"position ASC")
+if session[:cart_ids].empty?
+	page[:catalog_cart].remove_class_name :cart_with_books
+end
+	

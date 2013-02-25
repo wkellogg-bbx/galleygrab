@@ -1,0 +1,21 @@
+<h1>New site_review</h1>
+
+<%= error_messages_for :site_review %>
+
+<% form_for(@site_review) do |f| %>
+  <p>
+    <b>Approve</b><br />
+    <%= f.check_box :approve %>
+  </p>
+
+  <p>
+    <b>Comments</b><br />
+    <%= f.text_area :comments %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', site_reviews_path %>

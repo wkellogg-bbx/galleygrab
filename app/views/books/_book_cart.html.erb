@@ -1,0 +1,7 @@
+<div class="cart_item">
+			<%= cover_for_nolink(book_cart, :small) %>
+			<% form_remote_tag :url => {:action => 'remove_item_from_cart'} do %>
+					<%= hidden_field_tag :book, book_cart.id %>
+					<%= submit_tag 'Remove', :class=> 'remove_button' %>
+			<% end %>
+</div>

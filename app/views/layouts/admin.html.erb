@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Atria Books Galley Alley - Admin</title>
+  <meta name="description" content="Atria Books Galley Alley: For Booksellers, Reviewers and Trade Only. Choose up to 3 books,
+we'll ship them for free! Limited quantities are available." />
+  <meta name="keywords" content="Galley, Galley Alley, Atria, Atria Books, Booksellers, Reviewers, BEA, Book Expo of America, Advance Reading Copy, Advanced Readers Copy, Bound Galley, BoomBox" /> 
+  <%= stylesheet_link_tag 'modalbox' %>
+  <%= stylesheet_link_tag 'bookcase' %>
+</head>
+<body>
+<div id="container">
+	<div id="page_header">
+		
+		<h1>Atria Books Galley Alley</h1>
+		<h2>For Booksellers, Reviewers and Trade Only.</h2>
+		<h3>Choose up to 3 books,<br>
+				we'll ship them for free!
+				<div class="smaller">
+					Limited quantities are available. Or order eGalleys for most titles!
+				</div>
+		</h3>
+<div style="margin-top:30px;">
+<%= link_to "Admin Home", admin_root_path %> &nbsp;&nbsp;|&nbsp;&nbsp;
+<%= link_to "Books Admin", admin_books_path %> &nbsp;&nbsp;|&nbsp;&nbsp;
+<%= link_to "Orders Admin", admin_orders_path %> &nbsp;&nbsp;|&nbsp;&nbsp;
+<%= link_to "Site Reviews Admin", admin_site_reviews_path %> &nbsp;&nbsp;|&nbsp;&nbsp;
+<%= link_to "Counts", admin_counts_path %> &nbsp;&nbsp;|&nbsp;&nbsp;
+<%= link_to "Export Order Data", admin_data_export_form_path %> &nbsp;&nbsp;|&nbsp;&nbsp;
+<%= link_to "Logout", logout_path %>
+</div>
+	</div>
+<p style="color: green;  font-size:18px; font-weight:bold;"><%= flash[:notice] %></p>
+
+<%= yield  %>
+</div>
+</body>
+</html>

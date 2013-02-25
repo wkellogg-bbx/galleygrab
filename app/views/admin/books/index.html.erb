@@ -1,0 +1,51 @@
+
+<div id="admin_index">
+<table>
+  <tr>
+  	<th> </th>
+    <th>Title</th>
+    <th>Orders<br>Placed</th>
+    <th>Author</th>
+    <th>Pubdate</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Position</th>
+    
+  </tr>
+
+<% for book in @books %>
+  <tr>
+  	<td><%= cover_for_admin(book, :small) %></td>
+    <td><span class="admin_title"><%= book.title %></span><br>
+    	<span class="admin_subtitle">	<%= book.subtitle %></span>
+    	
+    </td>
+    <td><span class="admin_order_count">
+    	<% if @book_counts.assoc(book.id) %>
+    		<%=h @book_counts.assoc(book.id)[1] %>
+    	<% else %>
+    		0
+    	<% end %>
+    	</span>
+  	</td>
+    <td><span class="admin_author"><%= book.author %></span></td>
+    <td><%= book.pubdate.strftime("%m/%d/%Y")%></td>
+    <td class="admin_prices">$<%= "%.2f" % book.us_price %><br>
+    		$<%= "%.2f" % book.can_price %>&nbsp;Can. 	
+    </td>
+    
+ 
+    <td><span class="admin_descrip"><%=h book.short_descrip.first(120) %></span></td>
+   
+    <td><%=h book.position %></td>
+   
+    <td><%= link_to 'Show', [:admin, book] %></td>
+    <td><%= link_to 'Edit', edit_admin_book_path(book) %></td>
+    <td><%= link_to 'Destroy', [:admin, book], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New book', new_admin_book_path %>

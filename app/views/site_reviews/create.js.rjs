@@ -1,0 +1,2 @@
+page[:review].remove
+page[:review_thanks].show

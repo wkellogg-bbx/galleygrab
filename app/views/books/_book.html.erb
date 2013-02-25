@@ -1,0 +1,60 @@
+<div class="book_item" id="book-<%= book.id %>">
+		
+	<% if !session[:cart_ids].include?("#{book.id}") %>
+				<%= cover_for(book, :medium) %>
+				<% if session[:cart_ids].length > 1 %>
+					<% form_remote_tag :url => {:action => 'add_item_to_cart'}, :complete => " Modalbox.show('/cart', {title:'You have selected 3 books',width: 540,height:285, transitions:false, closeValue:'CLOSE X'});" do %>
+						<%= hidden_field_tag :book, book.id %>
+						<%= submit_tag 'Add to Cart', :class=> 'add_button', :title=>"Add Book"  %>
+				
+							<%= link_to_function image_tag("galley_button1.png"),
+							"this.blur(); Modalbox.show(this.href, {title:'  &nbsp;',width: 540,height:540, transitions:false, closeValue:'CLOSE X'});", 
+							:class=>"galley_button", 
+							:href=>"/galleys/show/#{book.id}" %> <!-- rnav -->
+							
+					 <%# link_to_function image_tag(cover_image, :class=>'cover_link', :alt=>"" ), "this.blur(); Modalbox.show(this.href, {title:'  &nbsp;',width: 540,height:540, transitions:false, closeValue:'CLOSE X'});", :href=>"/cart" %>
+					 <%# link_to_function 'Add',  "this.blur(); Modalbox.show(this.href, {title:'  You have selected 3 books',width: 540,height:200, transitions:false, closeValue:'CLOSE X'});", :href=>"/cart" %>
+						
+						<% end %>
+	
+				<% else %>
+					<% form_remote_tag :url => {:action => 'add_item_to_cart'} do %>
+						<%= hidden_field_tag :book, book.id %>
+						<%= submit_tag 'Add to Cart', :class=> 'add_button', :title=>"Add Book"  %>
+						
+		
+						<%= link_to_function image_tag("galley_button1.png"),
+						"this.blur(); Modalbox.show(this.href, {title:'  &nbsp;',width: 540,height:540, transitions:false, closeValue:'CLOSE X'});", 
+						:class=>"galley_button", 
+						:href=>"/galleys/show/#{book.id}" %> <!-- rnav -->	
+					<% end %>
+				<% end %>
+			<% else %>
+
+
+					<%= cover_for_added(book, :medium) %>
+				
+			
+				<% form_remote_tag :url => {:action => 'remove_item_from_cart'} do %>
+					<%= hidden_field_tag :book, book.id %>
+					<%= submit_tag 'Remove from Cart', :class=> 'remove_button', :title=>"Remove Book" %>
+										<%= link_to_function image_tag("galley_button1.png"),
+										"this.blur(); Modalbox.show(this.href, {title:'  &nbsp;',width: 540,height:540, transitions:false, closeValue:'CLOSE X'});", 
+										:class=>"galley_button", 
+										:href=>"/galleys/show/#{book.id}" %> <!-- rnav -->
+				<% end %>
+			<% end %>
+
+<div style="clear:both;"></div>
+			<h3 class ="book_title"> 
+				<%= book.title %>
+			</h3>
+			<h4 class ="book_author">
+				<%= book.author %>
+			</h4>
+				<h5 class ="book_onsale">
+			</h5>
+				
+			
+
+</div>

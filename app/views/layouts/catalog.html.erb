@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Atria Books Galley Alley</title>
+  <meta name="description" content="Atria Books Galley Alley: For Booksellers, Reviewers and Trade Only. Choose up to 3 books,
+we'll ship them for free! Limited quantities are available. Or order eGalleys for most titles!" />
+  <meta name="keywords" content="Galley, Galley Alley, Atria, Atria Books, Booksellers, Reviewers, BEA, Book Expo of America, Advance Reading Copy, Advanced Readers Copy, Bound Galley, BoomBox" />
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'modalbox' %>
+  <%= stylesheet_link_tag 'reset' %>
+  
+  <%= stylesheet_link_tag 'modalbox' %>
+  <%= stylesheet_link_tag 'bookcase' %>
+  <script type="text/javascript" charset="utf-8">
+	Element.observe(window,'unload', function(){
+	
+		//alert('hello');
+		
+		window.location.reload();
+		
+		/*	var typeValue = Form.getInputs('new_order','radio','order[purchaser_type]').find(function(radio) { return radio.checked; }).value;
+		
+		if (typeValue == "Reviewer"){
+			Element.hide('b_name'); 
+			Element.hide('b_address'); 
+			Element.show('reviewer_section'); 
+			Element.show('r_company'); 
+			Element.show('r_address');
+			
+		}*/
+		
+		
+		
+	});
+</script>
+</head>
+<body class="catalog">
+<div id="container">
+	<div id="page_header">
+		
+		<h1>Atria Books Galley Alley</h1>
+		<h2>For Booksellers, Reviewers and Trade Only.</h2>
+		<h3>Choose up to 3 books,<br>
+				we'll ship them for free!
+				<div class="smaller">
+					Limited quantities are available. Or order eGalleys for most titles!
+				</div>
+		</h3>
+	</div>
+<p style="color: green;  font-size:18px; font-weight:bold;"><%= flash[:notice] %></p>
+
+<%= yield  %>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<div id="admin_orders_index">
+	
+
+
+<table>
+  <tr>
+  	<th>ID</th>
+  	<th>Type</th>
+    <th>Info</th>
+    <th>Books</th>
+    <th>Company info</th>
+    <th>Opt-in</th>
+  </tr>
+
+<% for order in @orders %>
+  <tr>
+  	<td><%=h order.id %></td>
+  	<td><%=h order.purchaser_type %></td>
+    <td><%=h order.first_name %><br>
+   <%=h order.last_name %><br>
+   <%=h order.email %><br>
+   <%=h order.phone %>
+   
+   
+ </td>
+   
+    <td>	
+    	<ol>
+				<% order.books.each do |book| %>
+					<li><%= book.title.first(30) %></li>
+				<% end -%>
+			</ol>
+		</td>
+    <td>
+    	<%=h order.store %><br>
+    	<%=h order.address1 %> <br>
+   
+   <%=h order.city %>, <%=h order.state %> <%=h order.zip %>  </td>
+   
+  
+    <td><%=h order.opt_in %></td>
+    <td><%= link_to 'Show', [:admin, order] %></td>
+    <td><%= link_to 'Edit', edit_admin_order_path(order) %></td>
+    <td><%= link_to 'Destroy', [:admin, order], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<%= link_to 'New order', new_admin_order_path %>

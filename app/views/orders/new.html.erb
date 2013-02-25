@@ -1,0 +1,264 @@
+<script type="text/javascript" charset="utf-8">
+	Element.observe(window,'load', function(){
+		var typeValue = Form.getInputs('new_order','radio','order[purchaser_type]').find(function(radio) { return radio.checked; }).value;
+		
+		if (typeValue == "Reviewer"){
+			Element.hide('b_name'); 
+			Element.hide('b_address'); 
+			
+			Element.show('r_company'); 
+			Element.show('r_address');
+
+			Element.hide('l_company'); 
+			Element.hide('l_address');		
+			
+		}
+		
+		
+	
+    var fields = $$("input");
+    for (var i = 0; i < fields.length; i++) {
+      fields[i].onfocus = function() {
+      	this.addClassName('focused');
+      	this.up().addClassName('highlight');
+    	}
+      fields[i].onblur = function() {
+      	this.removeClassName('focused');
+      	this.up().removeClassName('highlight');
+      	
+    	}
+    }
+		
+		
+
+		
+		
+		
+	});
+	
+	
+	
+
+</script>
+
+<div id="cat_top">
+	<h1 id="catalog_header"> 
+	
+	</h1>
+
+	<div id="catalog_cart" class="checkout_dock">
+		<%= render :partial => 'books/checkout_cart',:collection=> @cart_items %>
+		
+		<%= link_to image_tag('spacer.gif',:id=>'back_to_catalog', :alt=>"Back to Catalog" ), catalog_path  %>
+	</div>
+	
+
+</div>
+
+<div id="order_form_section">
+
+<% form_for(@order) do |f| %>
+	
+	 <div class="radio_section">
+    <div class="are_you"><b>I am a</b></div>
+    <div class="radio_selections">
+   
+    <div id="bookseller_wrapper"> <%= radio_button :order, :purchaser_type, "Bookseller", :checked=>'checked', :onclick => "Element.show('b_name'); Element.show('b_address');  Element.hide('r_company'); Element.hide('r_address'); Element.hide('l_address'); Element.hide('l_company');" %>Bookseller<br></div> 
+
+    	<div id="reviewer_wrapper"><%= radio_button :order, :purchaser_type, "Librarian", :onclick => "Element.hide('b_name'); Element.hide('b_address');  Element.show('l_company'); Element.show('l_address'); Element.hide('r_company'); Element.hide('r_address');" %>Librarian<br></div>
+
+    	<div id="reviewer_wrapper"><%= radio_button :order, :purchaser_type, "Reviewer", :onclick => "Element.hide('b_name'); Element.hide('b_address');  Element.show('r_company'); Element.show('r_address'); Element.hide('l_address'); Element.hide('l_company');" %>Reviewer/Media<br></div>
+
+    	<div id="reviewer_wrapper"><%= radio_button :order, :purchaser_type, "Trade", :onclick => "Element.hide('b_name'); Element.hide('b_address');  Element.show('r_company'); Element.show('r_address');Element.hide('l_address'); Element.hide('l_company');" %>Trade</div>
+    </div>
+  </div>
+   	<div class="error_top">
+	<%= flash[:error]  %>
+</div>
+
+  <div id="form_bottom">
+ 
+  
+	<div class="form_row first">
+		<div class="lname">
+	    <label>First name</label> <%= f.text_field :first_name, :class=>'half text' %>
+	  </div>
+
+	
+		<div class="lname">
+					<label class="label_last">Last name</label>
+	   			 <%= f.text_field :last_name, :class=>'half text' %>	
+	  </div>
+	 
+	</div>
+	
+	 <div class="form_row company">
+	    <label>
+						<span id="b_name"><label>Bookstore Name</label></span>
+	    				<span id="r_company" style="display:none;"><label>Affiliation</label></span>
+						<span id="l_company" style="display:none;"><label>Library Name</label></span>
+	    </label>
+	 
+	    <%= f.text_field :store, :class=>'full' %>
+	 </div>
+	  <div class="form_row">
+	   				<span id="b_address"><label>Bookstore Address</label></span>
+	    			<span id="r_address" style="display:none;"><label>Address</label></span>
+					<span id="l_address" style="display:none;"><label>Library Address</label></span>
+	    
+	    <%= f.text_field :address1, :class=>'full' %>
+	 </div>
+	 <div class="form_row">
+	    <label>City</label>
+	    <%= f.text_field :city, :class=>'half' %>
+	 </div>
+	  <div class="form_row">
+	    <label>State / Province</label>
+	  
+	    
+  			<%= f.select :state, [ 	
+					['Alabama', 'AL'], 
+					['Alaska', 'AK'],
+					['Arizona', 'AZ'],
+					['Arkansas', 'AR'], 
+					['California', 'CA'], 
+					['Colorado', 'CO'], 
+					['Connecticut', 'CT'], 
+					['Delaware', 'DE'], 
+					['District Of Columbia', 'DC'], 
+					['Florida', 'FL'],
+					['Georgia', 'GA'],
+					['Hawaii', 'HI'], 
+					['Idaho', 'ID'], 
+					['Illinois', 'IL'], 
+					['Indiana', 'IN'], 
+					['Iowa', 'IA'], 
+					['Kansas', 'KS'], 
+					['Kentucky', 'KY'], 
+					['Louisiana', 'LA'], 
+					['Maine', 'ME'], 
+					['Maryland', 'MD'], 
+					['Massachusetts', 'MA'], 
+					['Michigan', 'MI'], 
+					['Minnesota', 'MN'],
+					['Mississippi', 'MS'], 
+					['Missouri', 'MO'], 
+					['Montana', 'MT'], 
+					['Nebraska', 'NE'], 
+					['Nevada', 'NV'], 
+					['New Hampshire', 'NH'], 
+					['New Jersey', 'NJ'], 
+					['New Mexico', 'NM'], 
+					['New York', 'NY'], 
+					['North Carolina', 'NC'], 
+					['North Dakota', 'ND'], 
+					['Ohio', 'OH'], 
+					['Oklahoma', 'OK'], 
+					['Oregon', 'OR'], 
+					['Pennsylvania', 'PA'], 
+					['Rhode Island', 'RI'], 
+					['South Carolina', 'SC'], 
+					['South Dakota', 'SD'], 
+					['Tennessee', 'TN'], 
+					['Texas', 'TX'], 
+					['Utah', 'UT'], 
+					['Vermont', 'VT'], 
+					['Virginia', 'VA'], 
+					['Washington', 'WA'], 
+					['West Virginia', 'WV'], 
+					['Wisconsin', 'WI'], 
+					['Wyoming', 'WY'],
+					['--', ''], 
+					['Alberta', 'AB'], 
+					['British Columbia', 'BC'], 
+					['Manitoba', 'MB'],
+					['New Brunswick', 'NB'],
+					['Newfoundland', 'NF'],
+					['Northwest Territories', 'NT'],
+					['Nova Scotia', 'NS'],
+					['Nunavut', 'NU'],
+					['Ontario', 'ON'],
+					['Prince Edward Island', 'PE'],
+					['Quebec', 'QC'],
+					['Saskatchewan', 'SK'],
+					['Yukon Territory', 'YT']], :include_blank => true %>
+
+
+	  
+					
+			
+			<span class="small_gray">* Galleys are for readers in US and Canada only</span>
+					
+		 </div>
+		<div class="form_row">
+	    <label>Zip / Postal Code</label>
+	    <%= f.text_field :zip, :class=>'zip', :maxlength=>10 %>
+	 </div>
+	
+	 <div class="form_row">
+	    <label>Email</label>
+	    <%= f.text_field :email, :class=>'medium' %>
+	 </div>
+	 <div class="form_row eula_copy">
+		<p>Advance reading copies, bound galleys, and finished books will be supplied free of charge to booksellers, librarians, and reviewers while supplies last. Simon &amp; Schuster, Inc., reserves the right to cancel orders, limit quantities, and make substitutions as necessary. Limit of one unit per title ordered per person. Limit of three titles per order. Limit of one order per person. Simon &amp; Schuster reserves the right to cancel this promotion at any time. Simon &amp; Schuster accepts no responsibility for lost, late, or misdirected mail. Items received through this promotion are not for resale. Any Uncorrected Proofs, Special Advance Reader's Editions, or finished books received through this promotion are not for sale and remain the property of Simon &amp Schuster. See individual title's copyright page for more information. Please do not quote for publication without checking against the&nbsp;finished&nbsp;book. </p>
+		<p>All titles &copy; their respective authors. Offer good while supplies last. All information contained on this page, including titles, prices, on sale dates, and ship dates of free ARC/galley/finished book is subject&nbsp;to&nbsp;change.</p>
+	</div>
+	<div class="form_row">
+	    <div class="check_box_container">
+	  		<div class="check">  	 
+	  			<%= f.check_box :eula %>
+	  		</div>
+	  		<div class="check_text">
+	  			I have read and accept these terms.
+	  		</div>
+	  	</div>
+	  </div>
+	  <div class="form_row">
+	    <div class="check_box_container">
+	  		<div class="check">  	 
+	  			<%= f.check_box :opt_in %>
+	  		</div>
+	  		<div class="check_text">
+	  			Sign up for Simon &amp; Schuster's Monthly Update and get the latest book releases, author updates, and more. <a href="http://www.simonandschuster.com/about/privacy_policy" target="_blank">Privacy Policy</a>
+	  		</div>
+	  	</div>
+	  </div>
+	
+		<!-- rnav start -->
+		 <div class="form_row">
+		    <div class="check_box_container">
+		  		<div class="check">  	 
+		  			<%= f.check_box :newsletter_optin %>
+		  		</div>
+		  		<div class="check_text">
+		  			Sign up for the Galley Alley e-newsletter to receive updates and special offers from Atria Books. <a href="http://www.simonandschuster.com/about/privacy_policy" target="_blank">Privacy Policy</a>
+		  		</div>
+		  	</div>
+	 </div>
+		<!-- rnav end -->
+		
+	  <% for item in session[:cart_ids] %>
+	
+			<%= hidden_field_tag "order[book_ids][]", item %>
+		
+		
+		<% end %>
+		<div id="order_button_container">
+	
+	    <%= f.submit "", :class=>'submit_order_button' %>
+			<%= link_to image_tag('update_selection_191x24.gif',:class=>'update_order_button', :alt=>"Update Your Selections" ), catalog_path  %>
+		</div>
+	<% end %>
+
+<!--end promoform -->
+</div>
+
+
+</div>
+
+<div id="catalog_footer" class="new">
+		<a href="http://www.simonandschuster.com/about/terms_of_use" target="_blank">Terms of Use</a> | <a href="http://www.simonandschuster.com/about/privacy_policy" target="_blank">Privacy Policy</a> |
+		Copyright &copy;1997 - 2012, Simon &amp; Schuster, Inc.<br>
+		All rights reserved, including the right of reproduction in whole or in part in any form.
+		
+	</div>

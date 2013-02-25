@@ -1,0 +1,66 @@
+<div id="modal">
+<div class="detail_add_button">
+	<% if !session[:cart_ids].include?("#{@book.id}") %>
+				<% form_tag :controller => 'orders',:action => 'add_item_to_cart' do %>
+					<%= hidden_field_tag :book, @book.id %>
+					<%= submit_tag 'Add to Cart' , :class=> 'add_button' %>
+					<a href="<%= @book.galley_url %>" class="galley_button_right">eGalley</a> <!-- rnav -->	
+					
+				<% end %>
+			<% else %>
+				<% form_tag :controller => 'orders',:action => 'remove_item_from_cart' do %>
+					<%= hidden_field_tag :book, @book.id %>
+					<%= submit_tag 'Remove from Cart' , :class=> 'remove_button' %>
+					<a href="<%= @book.galley_url %>" class="galley_button_right">eGalley</a> <!-- rnav -->	
+				<% end %>
+			<% end %>
+</div>
+
+			
+
+
+			<h2 class="detail_title"><%= @book.title %></h2>
+			<h3 class="detail_subtitle"><%= @book.subtitle %></h3>
+			<h4 class="detail_author"><%= @book.author %></h4>
+			
+			<div class="detail_gray_section">
+				<%= @book.preview_format %><span class="pipe"> | </span>
+				
+				<% if (Date.today <=> @book.ship_date)>0  %>
+					Available Now
+				<% else -%>
+					Estimated Delivery Date: <%= @book.ship_date.strftime("%B %e, %Y") %>
+				<% end -%>
+			</div>
+			<div class="detail_left">
+				<div class="detail_image">
+					<%= image_tag( @book.cover.public_filename(:large),  :size => "182x273") %>
+				</div>
+
+			</div>
+			<div class="detail_right">
+
+				<div class="detail_marketing" style="padding-bottom: 0; border-bottom: 0px solid #FFFFFF;">
+					<h3 style="text-transform:none;">eGalley</h3>
+				</div>
+				<div id="detail_summary" style="padding-bottom: 13px;">
+			
+					<div id="detail_short">
+						Read electronic galleys (eGalleys) in advance of publication by downloading through the <br />Simon & Schuster's Galley Grab program.<br /><br />An eGalley is a digital edition of an early, uncorrected proof of a forthcoming title, made available in advance so that booksellers, librarians, teachers and media professionals may preview the upcoming book.</div>
+				</div>
+				<div style="padding-top: 13px;" >
+					<span>To download, you'll be redirected to the Simon & Schuster Galley Grab website, where you’ll need to register for eGalley access. Please allow one business day for approval.</span>
+				</div>
+				<br />
+				<a href="<%= @book.galley_url %>" class="galley_button_left">eGalley</a> <!-- rnav -->	
+			
+				
+			
+			</div>
+			
+			<div style="width:100%; clear:both;">
+		
+		</div>
+	
+</div>
+
